@@ -518,8 +518,6 @@
                         "osType": "Windows",
                         "osState": "Generalized",
                         "diskSizeGB": 128,
-                        "managedDisk": {
-                            "id": "[resourceId('Microsoft.Compute/disks', 'Temp-Win11-MS-Disk')]"
                         },
                         "caching": "ReadWrite",
                         "storageAccountType": "Premium_LRS"
@@ -554,8 +552,6 @@
                         "name": "[concat(parameters('virtualMachines_AVDDemoImage_name'), '_OsDisk_1_7a8fe130731744b995e6d0f3b6bb328b')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
-                        "managedDisk": {
-                            "id": "[resourceId('Microsoft.Compute/disks', concat(parameters('virtualMachines_AVDDemoImage_name'), '_OsDisk_1_7a8fe130731744b995e6d0f3b6bb328b'))]"
                         },
                         "deleteOption": "Delete"
                     },
@@ -624,8 +620,6 @@
                         "name": "[concat(parameters('virtualMachines_AVDDM_name'), '_OsDisk_1_2ebeaf96575142d38814802296c757ab')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
-                        "managedDisk": {
-                            "id": "[resourceId('Microsoft.Compute/disks', concat(parameters('virtualMachines_AVDDM_name'), '_OsDisk_1_2ebeaf96575142d38814802296c757ab'))]"
                         },
                         "deleteOption": "Delete"
                     },
@@ -690,8 +684,6 @@
                         "name": "[concat(parameters('virtualMachines_IMG_AVD_DEMO_name'), '_OsDisk_1_265a3686bdc24691bdfa1ef4aa6e3a7b')]",
                         "createOption": "FromImage",
                         "caching": "ReadWrite",
-                        "managedDisk": {
-                            "id": "[resourceId('Microsoft.Compute/disks', concat(parameters('virtualMachines_IMG_AVD_DEMO_name'), '_OsDisk_1_265a3686bdc24691bdfa1ef4aa6e3a7b'))]"
                         },
                         "deleteOption": "Delete"
                     },
@@ -751,8 +743,6 @@
                         "name": "[concat(parameters('virtualMachines_Temp_Win11_MS_name'), '-Disk')]",
                         "createOption": "Attach",
                         "caching": "ReadWrite",
-                        "managedDisk": {
-                            "id": "[resourceId('Microsoft.Compute/disks', concat(parameters('virtualMachines_Temp_Win11_MS_name'), '-Disk'))]"
                         },
                         "deleteOption": "Detach"
                     },
